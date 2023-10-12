@@ -68,9 +68,9 @@ public class Lion : Feline
     public string maneColor;
 }
 
-public class Program
+public static class Program
 {
-    public void Main()
+    public static void Main()
     {
         List<Feline> felines = new List<Feline>();
         Lion lion1 = new Lion();
