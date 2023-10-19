@@ -79,7 +79,6 @@ public static class Program
 
         felines.Add(lion1); //Cheetah, Feline sınıfından türediği için bu listeye eklenebilir, hata vermez.
         felines.Add(cheetah1); //Cheetah, Feline sınıfından türediği için bu listeye eklenebilir, hata vermez.
-
         //----------------------------------------------------------------------------
 
         Feline feline1 = new Cheetah(); //Cheetah, Feline sınıfından türediği için bu referansla(etiketle) referanslanabilir, hata vermez.
