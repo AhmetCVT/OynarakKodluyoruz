@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnController : MonoBehaviour
 {
     public OreBehaviour[] orePrefabs;
-    private int oreSpawnCount = 50;
+    private int oreSpawnCount = 1;
 
     public Transform MinPositionCorner;
     public Transform MaxPositionCorner;

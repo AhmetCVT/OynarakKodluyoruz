@@ -23,7 +23,7 @@ public class OreBehaviour : MonoBehaviour, ICollectible
         if (other.CompareTag("Player"))
         {
             OnCollected();
-            Destroy(gameObject);
+            StartCoroutine(DelayDestryoObject());
         }
     }
 
@@ -40,5 +40,12 @@ public class OreBehaviour : MonoBehaviour, ICollectible
     public virtual void OnCollected()
     {
         Debug.Log("Congratulations, you have collected an ore!");
+    }
+
+    IEnumerator DelayDestryoObject()
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
+
     }
 }
